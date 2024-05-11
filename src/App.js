@@ -90,7 +90,7 @@ function App() {
               </div>
               <div className="Me-left-2ndrow">
                 Developer 
-                <img src={handwave}/>
+                <img src={handwave} alt="handwave"/>
               </div>
               <div className="Me-left-3rdrow">
                 Hi, I'm Michael David N Agudo. A learning Front-end React
@@ -101,13 +101,13 @@ function App() {
               <div className="Me-left-5throw">
                 <a href="https://www.linkedin.com/in/cael-dna" classname="linkedin">
                   <button className="Me-1">
-                    <img src={linkedin}/>
+                    <img src={linkedin} alt="linkedin"/>
                   </button>
                 </a>
                 <div className="round">
                   <a href="https://github.com/MD-4Good0" classname="github">
                     <button className="Me-2">
-                      <img src={github}/>
+                      <img src={github} alt="github"/>
                     </button>
                   </a>
                 </div>
@@ -115,15 +115,15 @@ function App() {
               <div className="Me-Tech-Stack">
                 Tech Stack
                 <span className="divider">|</span>
-                <img src={react}/>
-                <img src={html}/>
-                <img src={css}/>
-                <img src={javascript}/>
+                <img src={react} alt="react"/>
+                <img src={html} alt="html"/>
+                <img src={css} alt="css"/>
+                <img src={javascript} alt="javascript"/>
               </div>
             </div>
 
             <div className="Me-right">
-              <img src={photo}/>
+              <img src={photo} alt="cael"/>
             </div>          
           </div>
         </div>
@@ -133,7 +133,7 @@ function App() {
 
       <section className="About">
         <div className="about">
-          <img src={frontend}/>
+          <img src={frontend} alt="frontend"/>
           <div className="About-Me">
             <div className="About-Me-1strow">
             📌 About Me ~
@@ -171,11 +171,11 @@ function App() {
           <div className="Projects-column">
             <div className="Projects-3rdrow">
               <div className="Projects-photo">
-                <img src={medlabview}/>
+                <img src={medlabview} alt="medlabview"/>
               </div>
               <div className="Projects-info">
                   <div className="Projects-title-1">
-                    <img src={medlabview_logo}/>
+                    <img src={medlabview_logo} alt="medlabview logo"/>
                     ~ MEDLABVIEW (WIP) ~
                   </div>
                   <div className="Projects-description-1">
@@ -195,13 +195,13 @@ function App() {
                     <a href="https://github.com/BohemianRasberry/medlabview/tree/neoneo" className="medlabview">
                       <button>
                         Code
-                        <img src={github}/>
+                        <img src={github} alt="github"/>
                       </button>
                     </a>
                     <a href="https://bohemianrasberry.github.io/medlabview/" className="medlabview-site">
                       <button>
                         Live View
-                        <img src={redirect}/>
+                        <img src={redirect} alt="redirect"/>
                       </button>
                     </a>
                   </div>
@@ -210,7 +210,7 @@ function App() {
             <div className="Projects-4throw">
               <div className="Projects-info">
                   <div className="Projects-title-2">
-                    <img src={upm_ir_logo}/>
+                    <img src={upm_ir_logo} alt="upm_ir_logo"/>
                     ~ UPM IR (WIP) ~
                   </div>
                   <div className="Projects-description-2">
@@ -230,7 +230,7 @@ function App() {
                     <a href="https://github.com/BohemianRasberry/CS-122-IR/tree/react-proj" className="medlabview-site">
                       <button>
                         Code
-                        <img src={github}/>
+                        <img src={github} alt="github"/>
                       </button>
                     </a>
                     <div className="Projects-gitdemo-temp">
@@ -241,7 +241,7 @@ function App() {
                   </div>
               </div>
               <div className="Projects-photo">
-                <img src={upm_ir}/>
+                <img src={upm_ir} alt="upm_ir"/>
               </div>
             </div>
           </div>
@@ -257,23 +257,23 @@ function App() {
             "I'm only one call away..." - Sun Tzu
           </div>
           <div className="underline">
-            <img src={underline}/>
+            <img src={underline} alt="underline"/>
           </div>
           <div className="Contact-3rdrow">
             <div className="Contact-address">
-              <img src={location}/>
+              <img src={location} alt="location"/>
               <a href="https://www.google.com/maps/place/Antipolo" className="address">
                 Antipolo City, Rizal
               </a>
             </div>
             <div className="Contact-email">
-              <img src={email}/>
+              <img src={email} alt="email"/>
               <a href="mailto:agudo.mdn@gmail.com" className="email">
                 agudo.mdn@gmail.com
               </a>
             </div>
             <div className="Contact-phone">
-              <img src={phone}/>
+              <img src={phone} alt="phone"/>
               <div className="Contact-phone-column">
                 <a href="tel:+63960-609-0601" className="Contact-phone-1">
                   +63 960 609 0601
