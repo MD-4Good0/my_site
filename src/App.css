@@ -553,6 +553,11 @@
     filter: invert(50%);
     width: 30px;
     cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .footer-1 img:hover, .footer-2 img:hover {
+    filter: invert(100%);
   }
 }
 
