@@ -28,6 +28,8 @@ import phone from './Components/Assets/phone.png';
 
 import redirect from './Components/Assets/redirect.png';
 
+import facebook from './Components/Assets/facebook.png';
+
 import { useRef } from "react";
 
 import './App.css';
@@ -40,43 +42,48 @@ function App() {
 
   return (
     <div className="App">
-        <div className='header'>
-          <div className="left-stuff">
-              <img src={C} alt="C" />
-              <div className="title">ael.DNA</div>
-
-          </div>
-
-          <div className="right-stuff">
-            <button className="button1" onClick={() => {
+      <div className='header'>
+        <div className="padding">
+          <button className="left-stuff" onClick={() => {
               Me.current?.scrollIntoView({
                 behavior: 'smooth'
               })
             }}>
-                Home
-            </button>
-            <button className="button2" onClick={() => {
-                About.current?.scrollIntoView({
-                  behavior: 'smooth'
-                })
-              }}>
-                  About
-            </button>
-            <button className="button" onClick={() => {
-                Projects.current?.scrollIntoView({
-                  behavior: 'smooth'
-                })
-              }}>
-                Projects
-            </button>
-            <button className="button" onClick={() => {
-                Contact.current?.scrollIntoView({
-                  behavior: 'smooth'
-                })
-              }}>
-                Contact
-            </button>
-          </div>
+              <img src={C} alt="C" />
+              <div className="title">ael.DNA</div>
+          </button>
+        </div>
+
+        <div className="right-stuff">
+          <button className="button1" onClick={() => {
+            Me.current?.scrollIntoView({
+              behavior: 'smooth'
+            })
+          }}>
+              Home
+          </button>
+          <button className="button2" onClick={() => {
+              About.current?.scrollIntoView({
+                behavior: 'smooth'
+              })
+            }}>
+                About
+          </button>
+          <button className="button" onClick={() => {
+              Projects.current?.scrollIntoView({
+                behavior: 'smooth'
+              })
+            }}>
+              Projects
+          </button>
+          <button className="button" onClick={() => {
+              Contact.current?.scrollIntoView({
+                behavior: 'smooth'
+              })
+            }}>
+              Contact
+          </button>
+        </div>
       </div>
 
       <div ref={Me} id="Me"></div>
@@ -170,7 +177,7 @@ function App() {
           </div>
           <div className="Projects-column">
             <div className="Projects-3rdrow">
-              <div className="Projects-photo">
+              <div className="Projects-photo-1">
                 <img src={medlabview} alt="medlabview"/>
               </div>
               <div className="Projects-info">
@@ -240,7 +247,7 @@ function App() {
                     </div>
                   </div>
               </div>
-              <div className="Projects-photo">
+              <div className="Projects-photo-2">
                 <img src={upm_ir} alt="upm_ir"/>
               </div>
             </div>
@@ -289,6 +296,28 @@ function App() {
           </a>
         </div>
       </section>
+
+      <div className="footer">
+        <a href="https://www.facebook.com/3L.DNA/" classname="facebook">
+          <button className="footer-2">
+
+            <img src={facebook} alt="facebook"/>
+          </button>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/cael-dna" classname="linkedin">
+          <button className="footer-1">
+            <img src={linkedin} alt="linkedin"/>
+          </button>
+        </a>
+
+        <a href="https://github.com/MD-4Good0" classname="github">
+          <button className="footer-2">
+
+            <img src={github} alt="github"/>
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
