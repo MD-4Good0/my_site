@@ -1,6 +1,9 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-import C from './Components/Assets/C.png';
+import Logo from './Components/Assets/Logo.png';
 
 import handwave from './Components/Assets/handwave.png';
 import photo from './Components/Assets/Photo.png';
@@ -19,6 +22,8 @@ import medlabview from './Components/Assets/medlabview.png';
 import medlabview_logo from './Components/Assets/medlabview-logo.png';
 import upm_ir from './Components/Assets/upm-ir.png';
 import upm_ir_logo from './Components/Assets/upm-ir-logo.png';
+import nmis from './Components/Assets/nmis.png';
+import nmis_logo from './Components/Assets/nmis-logo.png';
 
 import underline from './Components/Assets/underline.png';
 
@@ -40,6 +45,31 @@ function App() {
   const Projects = useRef();
   const Contact = useRef();
 
+  useEffect(() => {
+    const handWaveImage = document.querySelector('.Me-left-2ndrow img');
+    if (handWaveImage) {
+      handWaveImage.classList.add('animate-wave');
+    }
+  
+    // Optional: Remove the class after animation is done to avoid it repeating
+    const handleAnimationEnd = () => {
+      handWaveImage.classList.remove('animate-wave');
+    };
+  
+    // Listen for the end of the animation
+    if (handWaveImage) {
+      handWaveImage.addEventListener('animationend', handleAnimationEnd);
+    }
+  
+    // Cleanup on component unmount
+    return () => {
+      if (handWaveImage) {
+        handWaveImage.removeEventListener('animationend', handleAnimationEnd);
+      }
+    };
+  }, []);
+  
+
   return (
     <div className="App">
       <div className='header'>
@@ -49,20 +79,20 @@ function App() {
                 behavior: 'smooth'
               })
             }}>
-              <img src={C} alt="C" />
-              <div className="title">ael.DNA</div>
+              <img src={Logo} alt="Logo" />
+              <div className="title">Not Applicable</div>
           </button>
         </div>
 
         <div className="right-stuff">
-          <button className="button1" onClick={() => {
+          <button className="button" onClick={() => {
             Me.current?.scrollIntoView({
               behavior: 'smooth'
             })
           }}>
               Home
           </button>
-          <button className="button2" onClick={() => {
+          <button className="button" onClick={() => {
               About.current?.scrollIntoView({
                 behavior: 'smooth'
               })
@@ -130,8 +160,8 @@ function App() {
             </div>
 
             <div className="Me-right">
-              <img src={photo} alt="cael"/>
-            </div>          
+              <img src={photo} alt="cael" />
+            </div>         
           </div>
         </div>
       </section>
@@ -149,13 +179,8 @@ function App() {
               A passionate Front-end Developer from the University of the Philippines Manila
             </div>
             <div className="About-Me-3rdrow">
-              I am an enthusiastic front-end developer with a passion 
-              for designing and creating websites, and a deep understanding 
-              of user interfaces and experiences. My creativity and curiosity 
-              fuel my dedication to continuously improve and advance my skills 
-              in front-end development.
-            </div>
-            <div className="About-Me-4throw">
+              I am a learning front-end developer with a passion 
+              for all things front-end development.
               I possess an entry-level set of skills in HTML, CSS, JavaScript,
               and the React bootstrap, however, I am willing to learn and improve 
               on these skills in hopes that I may reach my goal of becoming a
@@ -176,7 +201,7 @@ function App() {
             The pieces that create the full picture.
           </div>
           <div className="Projects-column">
-            <div className="Projects-3rdrow">
+            <div className="Projects-leftimg">
               <div className="Projects-photo-1">
                 <img src={medlabview} alt="medlabview"/>
               </div>
@@ -186,9 +211,10 @@ function App() {
                     ~ MEDLABVIEW (WIP) ~
                   </div>
                   <div className="Projects-description-1">
-                    MedLabView is a Laboratory Test Portal wherein 
-                    Doctors and Nurses may view, Medical Technologists may input, 
-                    Pathologists may approve such laboratory tests.
+                    MedLabView is a Laboratory Test Portal made to ease the process
+                    of sending test requests for Medical Technologists,
+                    inputting the test results for Pathologists,                    
+                    and viewing said results for Doctors and Nurses.
                   </div>
                   <div className="Projects-used">
                     <div className="Projects-used-1">
@@ -214,7 +240,7 @@ function App() {
                   </div>
               </div>
             </div>
-            <div className="Projects-4throw">
+            <div className="Projects-rightimg">
               <div className="Projects-info">
                   <div className="Projects-title-2">
                     <img src={upm_ir_logo} alt="upm_ir_logo"/>
@@ -249,6 +275,44 @@ function App() {
               </div>
               <div className="Projects-photo-2">
                 <img src={upm_ir} alt="upm_ir"/>
+              </div>
+            </div>
+            <div className="Projects-leftimg">
+              <div className="Projects-photo-3">
+                <img src={nmis} alt="nmis"/>
+              </div>
+              <div className="Projects-info">
+                  <div className="Projects-title-3">
+                    <img src={nmis_logo} alt="medlabview logo"/>
+                    ~ NMIS ~
+                  </div>
+                  <div className="Projects-description-3">
+                    NMIS is a Laboratory Information Management System 
+                    made for making the process of viewing laboratory results 
+                    easier.
+                  </div>
+                  <div className="Projects-used">
+                    <div className="Projects-used-1">
+                      REACT
+                    </div>
+                    <div className="Projects-used-2">
+                      CSS
+                    </div>
+                  </div>
+                  <div className="Projects-gitdemo">
+                    <a href="https://github.com/MD-4Good0/LIMS-128.2" className="nmis">
+                      <button>
+                        Code
+                        <img src={github} alt="github"/>
+                      </button>
+                    </a>
+                    <a href="https://nmis.vercel.app/login" className="nmis-site">
+                      <button>
+                        Live View
+                        <img src={redirect} alt="redirect"/>
+                      </button>
+                    </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -291,8 +355,8 @@ function App() {
               </div>
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/1GfvEnUtM2n5zLldvbAxMKSye-CnyToz-/view?usp=sharing" className="Contact-CV">
-            <button> ~ Curriculum Vitae ~ </button>
+          <a href="https://drive.google.com/file/d/1a7cE_rSRhXFvCFNWWgnl4XKHXXuq55Qb/view?usp=sharing" className="Contact-Resumé">
+            <button>→ Resumé ←</button>
           </a>
         </div>
       </section>
