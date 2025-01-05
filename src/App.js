@@ -136,7 +136,7 @@ function App() {
                 Developer from the University of the Philippines Manila. 📍
               </div>
               <div className="Me-left-5throw">
-                <a href="https://www.linkedin.com/in/cael-dna" classname="linkedin">
+                <a href="https://www.linkedin.com/in/avi-na" classname="linkedin">
                   <button className="Me-1">
                     <img src={linkedin} alt="linkedin"/>
                   </button>
@@ -355,7 +355,7 @@ function App() {
               </div>
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/1a7cE_rSRhXFvCFNWWgnl4XKHXXuq55Qb/view?usp=sharing" className="Contact-Resumé">
+          <a href="https://drive.google.com/file/d/1PWrzV_Gyn3o5wQdxVQmjhnzOfRPjmIEF/view?usp=sharing" className="Contact-Resumé">
             <button>→ Resumé ←</button>
           </a>
         </div>
@@ -369,7 +369,7 @@ function App() {
           </button>
         </a>
         
-        <a href="https://www.linkedin.com/in/cael-dna" classname="linkedin">
+        <a href="https://www.linkedin.com/in/avi-na" classname="linkedin">
           <button className="footer-1">
             <img src={linkedin} alt="linkedin"/>
           </button>
