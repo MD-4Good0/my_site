@@ -24,6 +24,8 @@ import upm_ir from './Components/Assets/upm-ir.png';
 import upm_ir_logo from './Components/Assets/upm-ir-logo.png';
 import nmis from './Components/Assets/nmis.png';
 import nmis_logo from './Components/Assets/nmis-logo.png';
+import calotrac from './Components/Assets/calotrac.png';
+import calotrac_logo from './Components/Assets/calotrac-logo.png';
 
 import underline from './Components/Assets/underline.png';
 
@@ -201,6 +203,7 @@ function App() {
             The pieces that create the full picture.
           </div>
           <div className="Projects-column">
+            {/*
             <div className="Projects-leftimg">
               <div className="Projects-photo-1">
                 <img src={medlabview} alt="medlabview"/>
@@ -277,6 +280,7 @@ function App() {
                 <img src={upm_ir} alt="upm_ir"/>
               </div>
             </div>
+            */}
             <div className="Projects-leftimg">
               <div className="Projects-photo-3">
                 <img src={nmis} alt="nmis"/>
@@ -313,6 +317,37 @@ function App() {
                       </button>
                     </a>
                   </div>
+              </div>
+            </div>
+            <div className="Projects-rightimg">
+              <div className="Projects-info">
+                  <div className="Projects-title-2">
+                    <img src={calotrac_logo} alt="upm_ir_logo"/>
+                    ~ CalotraC ~
+                  </div>
+                  <div className="Projects-description-2">
+                    CalotraC is a Calorie Tracking App that uses Gemini to know the details of the food you ate.
+                    Your calorie goal is based on your age and weight, whether you want to gain, lose, or maintain your current weight.
+                  </div>
+                  <div className="Projects-used">
+                    <div className="Projects-used-1">
+                      ANGULAR
+                    </div>
+                    <div className="Projects-used-2">
+                      CSS
+                    </div>
+                  </div>
+                  <div className="Projects-gitdemo">
+                    <a href="https://github.com/MD-4Good0/CalotraC" className="CalotraC-git">
+                      <button>
+                        Code
+                        <img src={github} alt="github"/>
+                      </button>
+                    </a>
+                  </div>
+              </div>
+              <div className="Projects-photo-2">
+                <img src={calotrac} alt="calotrac"/>
               </div>
             </div>
           </div>
