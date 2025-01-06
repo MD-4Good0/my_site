@@ -184,7 +184,7 @@ function App() {
               I am a learning front-end developer with a passion 
               for all things front-end development.
               I possess an entry-level set of skills in HTML, CSS, JavaScript,
-              and the React bootstrap, however, I am willing to learn and improve 
+              and the ReactJS library, however, I am willing to learn and improve 
               on these skills in hopes that I may reach my goal of becoming a
               well-versed and well-equipped front-end developer. 
             </div>
