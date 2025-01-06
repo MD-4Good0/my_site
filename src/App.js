@@ -16,7 +16,7 @@ import html from './Components/Assets/html.png';
 import css from './Components/Assets/css.png';
 import javascript from './Components/Assets/javascript.png';
 
-import frontend from './Components/Assets/Frontend.png';
+import frontend from './Components/Assets/Frontend.gif';
 
 import medlabview from './Components/Assets/medlabview.png';
 import medlabview_logo from './Components/Assets/medlabview-logo.png';

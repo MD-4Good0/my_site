@@ -280,7 +280,8 @@
   }
 
   .about img {
-    width: 45vh;
+    width: 30vh;
+    padding-right: 5vh;
   }
 
   .About-Me {
@@ -289,7 +290,7 @@
   
   .About-Me-1strow {
     font-size: 2.5vh;
-    color: #DA5968;
+    color: #ff5100;
     font-weight: bolder;
     
   }
