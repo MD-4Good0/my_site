@@ -1523,7 +1523,7 @@ a {
     justify-content: center;
     background-color: #f5f5f5;
     height: 80em;
-    width: calc(55em -10vw);
+    width: calc(100vw);
   }
 
   .Me-row {
@@ -1669,7 +1669,7 @@ a {
       display: flex;
       flex-direction: column;
       height: calc(120em - 100vh);
-      width: calc(0em);
+      width: calc(100vw);
       background-color: #000000;
       margin-bottom: 8.5vh;
       align-items: center;
@@ -1727,7 +1727,7 @@ a {
   justify-content: center;
   background-color: #f5f5f5;
   margin-bottom: 12vh;
-  width: calc(55em -10vw);
+  width: calc(100vw);
 }
 
   .projects {
@@ -1901,7 +1901,7 @@ a {
   align-items: center;
   justify-content: center;
   caret-color: transparent;
-  width: calc(55em -10vw);
+  width: calc(100vw);
   height: 40em;
 }
   #contact {
