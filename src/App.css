@@ -1993,7 +1993,7 @@ a {
   }
 }
 
-@media screen and (min-width: 414px) and (max-width: 414px) and (orientation: portrait) {
+@media screen and (min-width: 413px) and (max-width: 415px) and (orientation: portrait) {
   #Me {
   }
 
