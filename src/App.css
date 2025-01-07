@@ -3223,7 +3223,7 @@ a {
   justify-content: end;
   height: 5vh;
   width: 100%;
-  padding-right: 6vh;
+  margin-right: 6vh;
   padding-top: 0.5vh;
   gap: 1.25vh;
   background-color: #252525;
