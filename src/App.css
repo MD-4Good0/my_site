@@ -893,7 +893,6 @@ a {
       flex-direction: column;
       height: calc(100em - 100vh);
       width: calc(100vw);
-      background-color: #000000;
       margin-bottom: 8.5vh;
       align-items: center;
       justify-content: center;
