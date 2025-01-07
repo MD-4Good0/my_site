@@ -256,8 +256,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 12vh;
-    width: 50vh;
-    height: 50vh;
+    height: 40vh;
   }
   
   .Me-right img {
@@ -2212,7 +2211,7 @@ a {
   }
 
   .Me-Tech-Stack img {
-    width:3.5vh;
+    width: 3.5vh;
     transition: transform 0.3s ease;
   }
 
@@ -2229,18 +2228,18 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
+    width: 0vw;
     height: 50vh;
   }
   
   .Me-right img {
-    width: calc(75vw); 
+    width: calc(70vw); 
   }
 
   .about {
       display: flex;
       flex-direction: column;
-      height: calc(100em - 100vh);
+      height: 90vh;
       width: calc(100vw);
       margin-bottom: 8.5vh;
       align-items: center;
@@ -2257,7 +2256,8 @@ a {
   
     .About-Me {
       padding: 0.5vh 2vh;
-      width: 40vh;
+      width: 80vw;
+      
     }
     
     .About-Me-1strow {
@@ -2306,7 +2306,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 120vh;
+    width: 120vw;
     margin-top: 7.5vh; 
     align-items: center;
     justify-content: center;
@@ -2790,7 +2790,7 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
+    
     height: 50vh;
   }
   
@@ -3428,7 +3428,7 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
+    
     height: 50vh;
   }
   
@@ -3979,7 +3979,7 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
+    
     height: 50vh;
   }
   
@@ -4531,7 +4531,7 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
+    
     height: 50vh;
   }
   
@@ -5159,12 +5159,12 @@ a {
     margin-left: 0vh;
     margin-top: 3em;
     margin-bottom: 10vh;
-    width: 50vh;
-    height: 50vh;
+    
+    height: 40vh;
   }
   
   .Me-right img {
-    width: 100vh; 
+    width: clamp(50vw, 50vw, 60vw); 
   }
 
   #About {
