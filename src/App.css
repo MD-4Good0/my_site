@@ -2229,11 +2229,11 @@ a {
     margin-left: 0vh;
     margin-top: 3em;
     width: 0vw;
-    height: 50vh;
+    height: 40vh;
   }
   
   .Me-right img {
-    width: calc(70vw); 
+    width: 40vh; 
   }
 
   .about {
