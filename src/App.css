@@ -1265,6 +1265,7 @@ a {
     height: 5vh;
     width: 100%;
     padding-top: 0.5vh;
+    padding-right: 0;
     gap: 1.25vh;
     background-color: #252525;
     box-sizing: border-box; /* Ensures padding is included within the width */
