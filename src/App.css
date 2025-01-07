@@ -2849,7 +2849,7 @@ a {
     align-items: center;
     justify-content: center;
     color: white;
-    width: calc(55em -10vw);
+    width: 10em;
   }
   
     .about {
