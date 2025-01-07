@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import Logo from './Components/Assets/Logo.png';
@@ -17,11 +15,12 @@ import css from './Components/Assets/css.png';
 import javascript from './Components/Assets/javascript.png';
 
 import frontend from './Components/Assets/Frontend.gif';
-
+/*
 import medlabview from './Components/Assets/medlabview.png';
 import medlabview_logo from './Components/Assets/medlabview-logo.png';
 import upm_ir from './Components/Assets/upm-ir.png';
 import upm_ir_logo from './Components/Assets/upm-ir-logo.png';
+*/
 import nmis from './Components/Assets/nmis.png';
 import nmis_logo from './Components/Assets/nmis-logo.png';
 import calotrac from './Components/Assets/calotrac.png';
@@ -42,10 +41,62 @@ import { useRef } from "react";
 import './App.css';
 
 function App() {
-  const Me = useRef();
-  const About = useRef();
-  const Projects = useRef();
-  const Contact = useRef();
+  const Me = useRef(null);
+  const About = useRef(null);
+  const Projects = useRef(null);
+  const Contact = useRef(null);
+
+  const updateViewportHeight = () => {
+    const vh = window.innerHeight * 0.01; // 1vh = 1% of the viewport height
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+  
+  // Add event listener to update on resize
+  window.addEventListener('resize', updateViewportHeight);
+  
+  // Set initial viewport height when the page loads
+  window.addEventListener('load', updateViewportHeight);
+
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+  
+      // Check if the screen width is small enough to be considered mobile
+      const isMobile = window.innerWidth <= 900; // Adjust this value based on your breakpoint for mobile devices
+  
+      // Check if you're in the topmost section (Me) or at the very top of the page
+      const atTopOfPage = window.scrollY < 50; // Adjust this threshold if needed
+  
+      if (isMobile && atTopOfPage) {
+        // Scroll a small amount to trigger the hiding of the address bar on mobile
+        window.scrollTo({
+          top: 100, // Scroll down a little to hide the address bar
+          behavior: 'smooth',
+        });
+  
+        // After a short delay, scroll to the target section
+        setTimeout(() => {
+          window.scrollTo({
+            top: section.offsetTop - headerHeight,
+            behavior: 'smooth',
+          });
+        }, 300); // 300ms delay before scrolling to the section
+      } else {
+        // Directly scroll to the target section without triggering address bar hide
+        window.scrollTo({
+          top: section.offsetTop - headerHeight,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
+  
+  // Specific handler calls for each section
+  const handleScrollToMe = () => handleScrollToSection('Me');
+  const handleScrollToAbout = () => handleScrollToSection('About');
+  const handleScrollToProjects = () => handleScrollToSection('Projects');
+  const handleScrollToContact = () => handleScrollToSection('contact');  
 
   useEffect(() => {
     const handWaveImage = document.querySelector('.Me-left-2ndrow img');
@@ -77,9 +128,7 @@ function App() {
       <div className='header'>
         <div className="padding">
           <button className="left-stuff" onClick={() => {
-              Me.current?.scrollIntoView({
-                behavior: 'smooth'
-              })
+              handleScrollToMe();
             }}>
               <img src={Logo} alt="Logo" />
               <div className="title">Not Applicable</div>
@@ -88,32 +137,32 @@ function App() {
 
         <div className="right-stuff">
           <button className="button" onClick={() => {
-            Me.current?.scrollIntoView({
-              behavior: 'smooth'
-            })
+            handleScrollToMe();
           }}>
-              Home
+              <div>Home</div>
+              <span>H</span>
+              <span className="small">ome</span>
           </button>
           <button className="button" onClick={() => {
-              About.current?.scrollIntoView({
-                behavior: 'smooth'
-              })
+              handleScrollToAbout();
             }}>
-                About
+                <div>About</div>
+                <span>A</span>
+                <span className="small">bout</span>
           </button>
           <button className="button" onClick={() => {
-              Projects.current?.scrollIntoView({
-                behavior: 'smooth'
-              })
+              handleScrollToProjects();
             }}>
-              Projects
+              <div>Projects</div>
+              <span>P</span>
+              <span className="small">rojects</span>
           </button>
           <button className="button" onClick={() => {
-              Contact.current?.scrollIntoView({
-                behavior: 'smooth'
-              })
+              handleScrollToContact();
             }}>
-              Contact
+              <div>Contact</div>
+              <span>C</span>
+              <span className="small">ontacts</span>
           </button>
         </div>
       </div>
@@ -124,40 +173,46 @@ function App() {
         <div className="Me-column">
           <div className="Me-row">
             <div className="Me-left">
-              <div className="Me-left-1strow">
-                Front-End React
-              </div>
-              <div className="Me-left-2ndrow">
-                Developer 
-                <img src={handwave} alt="handwave"/>
-              </div>
-              <div className="Me-left-3rdrow">
-                Hi, I'm Michael David N Agudo. A learning Front-end React
-              </div>
-              <div className="Me-left-4throw">
-                Developer from the University of the Philippines Manila. 📍
-              </div>
-              <div className="Me-left-5throw">
-                <a href="https://www.linkedin.com/in/avi-na" classname="linkedin">
-                  <button className="Me-1">
-                    <img src={linkedin} alt="linkedin"/>
-                  </button>
-                </a>
-                <div className="round">
-                  <a href="https://github.com/MD-4Good0" classname="github">
-                    <button className="Me-2">
-                      <img src={github} alt="github"/>
-                    </button>
-                  </a>
+              <div className="Me-left-1stand2nd">
+                <div className="Me-left-1strow">
+                  Front-End React 
+                </div>
+                <div className="Me-left-2ndrow">
+                  Developer 
+                  <img src={handwave} alt="handwave"/>
                 </div>
               </div>
-              <div className="Me-Tech-Stack">
-                Tech Stack
-                <span className="divider">|</span>
-                <img src={react} alt="react"/>
-                <img src={html} alt="html"/>
-                <img src={css} alt="css"/>
-                <img src={javascript} alt="javascript"/>
+              <div className="Me-left-3rdand4th">
+                <div className="Me-left-3rdrow">
+                  Hi, I'm Michael David N Agudo. A learning Front-end React
+                </div>
+                <div className="Me-left-4throw">
+                  Developer from the University of the Philippines Manila. 📍
+                </div>
+              </div>
+              <div className="Me-left-5thandTech">
+                <div className="Me-left-5throw">
+                  <a href="https://www.linkedin.com/in/avi-na" classname="linkedin">
+                    <button className="Me-1">
+                      <img src={linkedin} alt="linkedin"/>
+                    </button>
+                  </a>
+                  <div className="round">
+                    <a href="https://github.com/MD-4Good0" classname="github">
+                      <button className="Me-2">
+                        <img src={github} alt="github"/>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className="Me-Tech-Stack">
+                  Tech Stack
+                  <span className="divider">|</span>
+                  <img src={react} alt="react"/>
+                  <img src={html} alt="html"/>
+                  <img src={css} alt="css"/>
+                  <img src={javascript} alt="javascript"/>
+                </div>
               </div>
             </div>
 
@@ -171,14 +226,15 @@ function App() {
       <div ref={About} id="About">.</div>
 
       <section className="About">
-        <div className="about">
+        <div className="about"> 
           <img src={frontend} alt="frontend"/>
           <div className="About-Me">
             <div className="About-Me-1strow">
             📌 About Me ~
             </div>
             <div className="About-Me-2ndrow">
-              A passionate Front-end Developer from the University of the Philippines Manila
+              <div className="About-Me-2ndrowtmp">A passionate Front-end Developer from </div>
+              <div className="About-Me-2ndrowtmp">the University of the Philippines Manila </div>
             </div>
             <div className="About-Me-3rdrow">
               I am a learning front-end developer with a passion 
