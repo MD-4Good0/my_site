@@ -61,14 +61,10 @@ function App() {
     const section = document.getElementById(sectionId);
     if (section) {
       const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
-  
-      // Check if the screen width is small enough to be considered mobile
-      const isMobile = window.innerWidth <= 900; // Adjust this value based on your breakpoint for mobile devices
-  
       // Check if you're in the topmost section (Me) or at the very top of the page
       const atTopOfPage = window.scrollY < 50; // Adjust this threshold if needed
   
-      if (isMobile && atTopOfPage) {
+      if ( atTopOfPage) {
         // Scroll a small amount to trigger the hiding of the address bar on mobile
         window.scrollTo({
           top: 100, // Scroll down a little to hide the address bar
