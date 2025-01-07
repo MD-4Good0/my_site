@@ -940,7 +940,8 @@ a {
 #Projects {
   margin-top: -2vh;
   margin-bottom: -6vh;
-  color: #f5f5f5;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
 }
 
 .Projects {
@@ -1708,7 +1709,8 @@ a {
 #Projects {
   margin-top: -2vh;
   margin-bottom: -6vh;
-  color: #f5f5f5;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
 }
 
 .Projects {
@@ -2153,7 +2155,7 @@ a {
     justify-content: center;
     background-color: #f5f5f5;
     height: 80em;
-    width: calc(55em -10vw);
+    width: calc(100vw);
   }
 
   .Me-row {
@@ -2299,7 +2301,7 @@ a {
       display: flex;
       flex-direction: column;
       height: calc(140em - 100vh);
-      width: calc(0em);
+      width: calc(100vw);
       margin-bottom: 8.5vh;
       align-items: center;
       justify-content: center;
@@ -2347,7 +2349,8 @@ a {
 #Projects {
   margin-top: 0vh;
   margin-bottom: -3vh;
-  color: #f5f5f5;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
 }
 
 .Projects {
@@ -2356,7 +2359,7 @@ a {
   justify-content: center;
   background-color: #f5f5f5;
   margin-bottom: 12vh;
-  width: calc(55em -10vw);
+  width: calc(100vw);
 }
 
   .projects {
@@ -2530,7 +2533,7 @@ a {
   align-items: center;
   justify-content: center;
   caret-color: transparent;
-  width: calc(55em -10vw);
+  width: calc(100vw);
   height: 55em;
 }
   #contact {
@@ -2899,7 +2902,8 @@ a {
 #Projects {
   margin-top: 10vh;
   margin-bottom: -5vh;
-  color: #f5f5f5;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
 }
 
 .Projects {
@@ -3528,7 +3532,8 @@ a {
 #Projects {
   margin-top: -2vh;
   margin-bottom: -6vh;
-  color: #f5f5f5;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
 }
 
 .Projects {
