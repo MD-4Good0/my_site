@@ -1938,8 +1938,6 @@ a {
 }
 
 @media screen and (min-width: 362px) and (max-width: 376px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -1952,8 +1950,6 @@ a {
 }
 
 @media screen and (min-width: 377px) and (max-width: 391px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -1966,8 +1962,6 @@ a {
 }
 
 @media screen and (min-width: 392px) and (max-width: 393px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -1980,8 +1974,6 @@ a {
 }
 
 @media screen and (min-width: 394px) and (max-width: 413px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -1994,8 +1986,6 @@ a {
 }
 
 @media screen and (min-width: 413px) and (max-width: 415px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -2239,7 +2229,7 @@ a {
   .about {
       display: flex;
       flex-direction: column;
-      height: 90vh;
+      height: 120vh;
       width: calc(100vw);
       margin-bottom: 8.5vh;
       align-items: center;
@@ -2306,7 +2296,6 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 120vw;
     margin-top: 7.5vh; 
     align-items: center;
     justify-content: center;
@@ -2639,8 +2628,6 @@ a {
 }
 
 @media screen and (min-width: 415px) and (max-width: 767px) and (orientation: portrait) {
-  #Me {
-  }
 
   #About {
     margin-top: 0em;
@@ -2655,9 +2642,6 @@ a {
 @media screen and (width: 768px) and (orientation: portrait) {
   .title {
     display: none;
-  }
-
-  #Me {
   }
 
   .Me {
@@ -3294,9 +3278,6 @@ a {
     transition: transform 0.3s ease;
   }
 
-  #Me {
-  }
-
   .Me {
     display: flex;
     align-items: center;
@@ -3846,9 +3827,6 @@ a {
     display: none;
   }
   
-  #Me {
-  }
-
   .Me {
     display: flex;
     align-items: center;
@@ -4398,9 +4376,6 @@ a {
     display: none;
   }
   
-  #Me {
-  }
-
   .Me {
     display: flex;
     align-items: center;
@@ -5040,9 +5015,6 @@ a {
     transform: scale(1, 2);
   }
   
-  #Me {
-  }
-
   .Me {
     display: flex;
     align-items: center;
