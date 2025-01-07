@@ -1670,7 +1670,6 @@ a {
       flex-direction: column;
       height: calc(120em - 100vh);
       width: calc(100vw);
-      background-color: #000000;
       margin-bottom: 8.5vh;
       align-items: center;
       justify-content: center;
@@ -2036,7 +2035,7 @@ a {
     align-items: center;
     justify-content: end;
     height: 5vh;
-    width: 100%;
+    width: calc(100vw);
     padding-right: 6vh; /* Use padding instead of margin */
     padding-top: 0.5vh;
     gap: 1.25vh;
