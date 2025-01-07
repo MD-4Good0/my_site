@@ -2112,13 +2112,13 @@ a {
   
   .Me-left-3rdrow {
     margin-top: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.3vh;
     padding-left: 0.6vh;
   }
   
   .Me-left-4throw {
     margin-top: 1vh;
-    font-size: 1.52vh;
+    font-size: 1.3vh;
     padding-left: 0.6vh;
   }
   
@@ -2160,7 +2160,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2.1vh;
+    gap: 1.8vh;
     margin-top: 1vh;
     padding-left: 0.5vh;
     font-size: 2vh;
