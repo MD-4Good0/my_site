@@ -885,7 +885,7 @@ a {
   }
   
   .Me-right img {
-    width: 50vh; 
+    width: calc(75vw); 
   }
 
   .about {
@@ -1261,10 +1261,9 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     height: 5vh;
     width: 100%;
-    padding-right: 6vh; /* Use padding instead of margin */
     padding-top: 0.5vh;
     gap: 1.25vh;
     background-color: #252525;
