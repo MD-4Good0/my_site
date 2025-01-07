@@ -2279,7 +2279,7 @@ a {
   }
 
   .Projects-photo-1 img, .Projects-photo-2 img, .Projects-photo-3 img {
-    width: 45vh;
+    width: 40vh;
     border-radius: 1vh;
     transition: 0.3s;
   }
@@ -2381,7 +2381,7 @@ a {
     width: 40vh;
     text-align: center;
     margin-top: 1vh;
-    font-size: 1em;
+    font-size: 1.7vh;
     color: #919191;
   }
 
