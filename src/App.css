@@ -2194,7 +2194,7 @@ a {
   
   #About {
     margin-top: 0em;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     display: flex;
     align-items: center;
     justify-content: center;
