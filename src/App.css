@@ -621,33 +621,36 @@
     color: #0FA3D0;
   }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  height: 6vh;
-  padding-right: 6vh;
-  padding-top: 0.5vh;
-  gap: 1.25vh;
-  background-color: #252525;
-}
-
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 100%;
+    padding-right: 6vh; /* Use padding instead of margin */
+    padding-top: 0.5vh;
+    gap: 1.25vh;
+    background-color: #252525;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
   .footer-1, .footer-2 {
     border: none;
     background: none;
   }
-
-  .footer-1 img, .footer-2 img{
+  
+  .footer-1 img, .footer-2 img {
     filter: invert(50%);
     width: 3vh;
     cursor: pointer;
     transition: 0.3s;
   }
-
+  
   .footer-1 img:hover, .footer-2 img:hover {
     filter: invert(100%);
   }
+  
 
 a {
   text-decoration: none;
@@ -1255,34 +1258,36 @@ a {
     color: #0FA3D0;
   }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  height: 5vh;
-  width: calc(55em -10vw);
-  padding-right: 2vh;
-  padding-top: 0.5vh;
-  gap: 1.25vh;
-  background-color: #252525;
-}
-
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 100%;
+    padding-right: 6vh; /* Use padding instead of margin */
+    padding-top: 0.5vh;
+    gap: 1.25vh;
+    background-color: #252525;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
   .footer-1, .footer-2 {
     border: none;
     background: none;
   }
-
-  .footer-1 img, .footer-2 img{
+  
+  .footer-1 img, .footer-2 img {
     filter: invert(50%);
     width: 3vh;
     cursor: pointer;
     transition: 0.3s;
   }
-
+  
   .footer-1 img:hover, .footer-2 img:hover {
     filter: invert(100%);
   }
+  
 }
 
 @media screen and (min-width: 0px) and (max-width: 321px) and (orientation: portrait) {
@@ -2025,34 +2030,36 @@ a {
     color: #0FA3D0;
   }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  height: 5vh;
-  width: calc(55em -10vw);
-  padding-right: 6vh;
-  padding-top: 0.5vh;
-  gap: 1.25vh;
-  background-color: #252525;
-}
-
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 100%;
+    padding-right: 6vh; /* Use padding instead of margin */
+    padding-top: 0.5vh;
+    gap: 1.25vh;
+    background-color: #252525;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
   .footer-1, .footer-2 {
     border: none;
     background: none;
   }
-
-  .footer-1 img, .footer-2 img{
+  
+  .footer-1 img, .footer-2 img {
     filter: invert(50%);
     width: 3vh;
     cursor: pointer;
     transition: 0.3s;
   }
-
+  
   .footer-1 img:hover, .footer-2 img:hover {
     filter: invert(100%);
   }
+  
 }
 
 @media screen and (min-width: 769px) and (max-width: 800px) and (orientation: portrait) {
@@ -2664,34 +2671,35 @@ a {
     color: #0FA3D0;
   }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  height: 5vh;
-  width: calc(55em -10vw);
-  padding-right: 6vh;
-  padding-top: 0.5vh;
-  gap: 1.25vh;
-  background-color: #252525;
-}
-
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 100%;
+    padding-right: 6vh; /* Use padding instead of margin */
+    padding-top: 0.5vh;
+    gap: 1.25vh;
+    background-color: #252525;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
   .footer-1, .footer-2 {
     border: none;
     background: none;
   }
-
-  .footer-1 img, .footer-2 img{
+  
+  .footer-1 img, .footer-2 img {
     filter: invert(50%);
     width: 3vh;
     cursor: pointer;
     transition: 0.3s;
   }
-
+  
   .footer-1 img:hover, .footer-2 img:hover {
     filter: invert(100%);
-  }
+  }  
 }
 
 @media screen and (min-width: 801px) and (max-width: 900px) and (orientation: portrait) {
