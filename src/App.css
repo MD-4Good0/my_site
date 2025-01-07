@@ -879,8 +879,8 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 50vh;
-    height: 50vh;
+    width: 0vh;
+    height: 40vh;
   }
   
   .Me-right img {
@@ -1949,7 +1949,7 @@ a {
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 391px) and (orientation: portrait) {
+@media screen and (min-width: 377px) and (max-width: 383px) and (orientation: portrait) {
 
   #About {
     margin-top: 0em;
@@ -1961,41 +1961,7 @@ a {
   }
 }
 
-@media screen and (min-width: 392px) and (max-width: 393px) and (orientation: portrait) {
-
-  #About {
-    margin-top: 0em;
-    margin-bottom: -2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-}
-
-@media screen and (min-width: 394px) and (max-width: 413px) and (orientation: portrait) {
-
-  #About {
-    margin-top: 0em;
-    margin-bottom: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-}
-
-@media screen and (min-width: 413px) and (max-width: 415px) and (orientation: portrait) {
-
-  #About {
-    margin-top: 0em;
-    margin-bottom: -1.1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-
+@media screen and (min-width: 383px) and (max-width: 385px) and (orientation: portrait) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -2201,7 +2167,7 @@ a {
   }
 
   .Me-Tech-Stack img {
-    width: 3.5vh;
+    width:3.5vh;
     transition: transform 0.3s ease;
   }
 
@@ -2218,18 +2184,27 @@ a {
   .Me-right {
     margin-left: 0vh;
     margin-top: 3em;
-    width: 0vw;
+    width: 0vh;
     height: 40vh;
   }
   
   .Me-right img {
-    width: 40vh; 
+    width: calc(75vw); 
+  }
+  
+  #About {
+    margin-top: 0em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 
   .about {
       display: flex;
       flex-direction: column;
-      height: 120vh;
+      height: 90vh;
       width: calc(100vw);
       margin-bottom: 8.5vh;
       align-items: center;
@@ -2246,8 +2221,7 @@ a {
   
     .About-Me {
       padding: 0.5vh 2vh;
-      width: 80vw;
-      
+      width: 40vh;
     }
     
     .About-Me-1strow {
@@ -2296,6 +2270,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 120vh;
     margin-top: 7.5vh; 
     align-items: center;
     justify-content: center;
@@ -2601,10 +2576,10 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 10vh;
     width: 100%;
     padding-top: 0.5vh;
-    padding-right: 0;
+    padding-right: 0vh;
     gap: 1.25vh;
     background-color: #252525;
     box-sizing: border-box; /* Ensures padding is included within the width */
@@ -2627,7 +2602,43 @@ a {
   }
 }
 
-@media screen and (min-width: 415px) and (max-width: 767px) and (orientation: portrait) {
+@media screen and (min-width: 385px) and (max-width: 391px) and (orientation: portrait) {
+
+  #About {
+    margin-top: 0em;
+    margin-bottom: -6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 392px) and (max-width: 393px) and (orientation: portrait) {
+
+  #About {
+    margin-top: 0em;
+    margin-bottom: -2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 394px) and (max-width: 413px) and (orientation: portrait) {
+
+  #About {
+    margin-top: 0em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px) and (orientation: portrait) {
 
   #About {
     margin-top: 0em;
