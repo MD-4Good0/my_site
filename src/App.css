@@ -30,8 +30,8 @@
   align-items: center;
   margin: auto;
   background-color: #ffffff;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
   caret-color: transparent;
   position: -webkit-sticky;
   position: fixed;
@@ -3248,6 +3248,100 @@ a {
 }
 
 @media screen and (min-width: 751px) and (max-width: 1120px) and (orientation: landscape) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    caret-color: transparent;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    
+    box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.132);
+  }
+  
+  .padding {
+    padding-left: 6vh;
+  }
+  
+  .left-stuff {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .left-stuff img {
+    position: fixed;
+    top: 0px;
+    width: 11vh;
+  }
+  
+  .right-stuff {
+    padding-right: 6vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-stuff span {
+    display: none;
+  }
+  
+  .title, .title-short {
+    height: auto;
+    width: auto;
+    color: #000000;
+    font-size: 22.5px;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Poppins', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    padding-left: 10.5vh;
+  }
+  
+  .right-stuff button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Poppins', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    padding: 1vh 1.5vh;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .right-stuff button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.10vh;
+    background-color: #000000;
+    left: 0;
+    bottom: 0;
+    top: 4.5vh;
+    transform: scale(0, 1); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .right-stuff button:hover {
+    color: #000000;
+  }
+  
+  .right-stuff button:hover::after {
+    transform: scale(1, 2);
+  }
+  
   #Me {
     margin-top: calc(10em - 28vw);
     margin-bottom: calc(10em - 15vw);
