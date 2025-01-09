@@ -440,7 +440,7 @@ function App() {
               </div>
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/14tSw6e4K1buTx3zNpzXbahP3wfF1y2VV/view?usp=sharing" className="Contact-Resumé">
+          <a href="https://drive.google.com/file/d/1BXWhv0IQL32Pz2BTvuvIyLyERrZ5PIlH/view?usp=sharing" className="Contact-Resumé">
             <button>→ Resumé ←</button>
           </a>
         </div>
