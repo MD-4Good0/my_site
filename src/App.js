@@ -16,11 +16,11 @@ import javascript from './Components/Assets/javascript.png';
 
 import frontend from './Components/Assets/Frontend.gif';
 /*
-import medlabview from './Components/Assets/medlabview.png';
-import medlabview_logo from './Components/Assets/medlabview-logo.png';
 import upm_ir from './Components/Assets/upm-ir.png';
 import upm_ir_logo from './Components/Assets/upm-ir-logo.png';
 */
+import medlabview from './Components/Assets/medlabview.png';
+import medlabview_logo from './Components/Assets/medlabview-logo.png';
 import nmis from './Components/Assets/nmis.png';
 import nmis_logo from './Components/Assets/nmis-logo.png';
 import calotrac from './Components/Assets/calotrac.png';
@@ -256,45 +256,6 @@ function App() {
           </div>
           <div className="Projects-column">
             {/*
-            <div className="Projects-leftimg">
-              <div className="Projects-photo-1">
-                <img src={medlabview} alt="medlabview"/>
-              </div>
-              <div className="Projects-info">
-                  <div className="Projects-title-1">
-                    <img src={medlabview_logo} alt="medlabview logo"/>
-                    ~ MEDLABVIEW (WIP) ~
-                  </div>
-                  <div className="Projects-description-1">
-                    MedLabView is a Laboratory Test Portal made to ease the process
-                    of sending test requests for Medical Technologists,
-                    inputting the test results for Pathologists,                    
-                    and viewing said results for Doctors and Nurses.
-                  </div>
-                  <div className="Projects-used">
-                    <div className="Projects-used-1">
-                      REACT
-                    </div>
-                    <div className="Projects-used-2">
-                      CSS
-                    </div>
-                  </div>
-                  <div className="Projects-gitdemo">
-                    <a href="https://github.com/BohemianRasberry/medlabview/tree/neoneo" className="medlabview">
-                      <button>
-                        Code
-                        <img src={github} alt="github"/>
-                      </button>
-                    </a>
-                    <a href="https://bohemianrasberry.github.io/medlabview/" className="medlabview-site">
-                      <button>
-                        Live View
-                        <img src={redirect} alt="redirect"/>
-                      </button>
-                    </a>
-                  </div>
-              </div>
-            </div>
             <div className="Projects-rightimg">
               <div className="Projects-info">
                   <div className="Projects-title-2">
@@ -400,6 +361,43 @@ function App() {
               </div>
               <div className="Projects-photo-2">
                 <img src={calotrac} alt="calotrac"/>
+              </div>
+            </div>
+            <div className="Projects-leftimg">
+              <div className="Projects-photo-1">
+                <img src={medlabview} alt="medlabview"/>
+              </div>
+              <div className="Projects-info">
+                  <div className="Projects-title-1">
+                    <img src={medlabview_logo} alt="medlabview logo"/>
+                    ~ MEDLABVIEW (WIL)~
+                  </div>
+                  <div className="Projects-description-1">
+                    MedLabView is a Laboratory Test Portal made to ease the process
+                    of sending, inputting, and viewing test requests and results.
+                  </div>
+                  <div className="Projects-used">
+                    <div className="Projects-used-1">
+                      REACT
+                    </div>
+                    <div className="Projects-used-2">
+                      CSS
+                    </div>
+                  </div>
+                  <div className="Projects-gitdemo">
+                    <a href="https://github.com/BohemianRasberry/medlabview/tree/neoneo" className="medlabview">
+                      <button>
+                        Code
+                        <img src={github} alt="github"/>
+                      </button>
+                    </a>
+                    <a href="https://bohemianrasberry.github.io/medlabview/" className="medlabview-site">
+                      <button>
+                        Live View
+                        <img src={redirect} alt="redirect"/>
+                      </button>
+                    </a>
+                  </div>
               </div>
             </div>
           </div>

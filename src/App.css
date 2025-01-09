@@ -399,8 +399,11 @@
     display: flex;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 2vh;
+  }
+
+  .Projects-column {
+    margin-bottom: 7vh;
   }
 
   .Projects-title-1, .Projects-title-2, .Projects-title-3 {
@@ -443,6 +446,10 @@
     margin-top: 1vh;
     font-size: 2vh;
     color: #919191;
+  }
+
+  .Projects-description-1 span {
+    color: #b203037f;
   }
 
   .Projects-used {
@@ -1021,7 +1028,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -1653,7 +1659,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -2335,7 +2340,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -2933,7 +2937,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -3569,7 +3572,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -4117,7 +4119,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -4666,7 +4667,6 @@ a {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
@@ -5287,7 +5287,6 @@ a {
     display: flex;
     align-items: center;
     margin-top: 3vh;
-    margin-bottom: 7vh;
     gap: 5vh;
   }
 
