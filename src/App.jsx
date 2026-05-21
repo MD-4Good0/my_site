@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 import Logo from "./Components/Assets/Logo.png";
 
@@ -287,8 +287,6 @@ function App() {
   const Projects = useRef(null);
   const Contact = useRef(null);
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   useEffect(() => {
     const updateViewportHeight = () => {
       const vh = window.innerHeight * 0.01;
@@ -337,8 +335,6 @@ function App() {
       top: section.offsetTop,
       behavior: "smooth",
     });
-  
-    setIsSidebarOpen(false);
   };
 
   const handleScrollToMe = () => handleScrollToSection("Me");
@@ -348,44 +344,14 @@ function App() {
 
   return (
     <div className="min-h-screen caret-transparent font-['Poppins','Lucida_Sans_Unicode','Lucida_Grande','Lucida_Sans',Arial,sans-serif] text-[#101010]">
-      <button
-        type="button"
-        onClick={() => setIsSidebarOpen((current) => !current)}
-        className={`
-          fixed top-[2vh] z-[1100] flex h-[5.5vh] w-[5.5vh]
-          items-center justify-center rounded-full bg-[#05070a]
-          text-[2.6vh] font-bold text-white shadow-[0_10px_30px_rgba(0,0,0,0.25)]
-          transition-all duration-300 hover:scale-105
-          md:hidden
-          ${isSidebarOpen ? "left-[6rem]" : "left-[2vh]"}
-        `}
-        aria-label="Toggle navigation menu"
-      >
-        {isSidebarOpen ? "×" : "☰"}
-      </button>
-  
-      {isSidebarOpen && (
-        <button
-          type="button"
-          onClick={() => setIsSidebarOpen(false)}
-          className="
-            fixed inset-0 z-[900] bg-black/35 backdrop-blur-[1px]
-            md:hidden
-          "
-          aria-label="Close navigation menu"
-        />
-      )}
-  
       <aside
-        className={`
-          fixed left-0 top-0 z-[1000] flex h-screen w-[5rem]
+        className="
+          fixed left-0 top-0 z-[1000] hidden h-screen w-[6rem]
           flex-col items-center justify-between border-r border-white/10
           bg-[#05070a] px-2 py-4
           shadow-[0_0_18px_4px_rgba(0,0,0,0.45)]
-          transition-transform duration-300 ease-in-out
-          md:w-[6rem] md:translate-x-0
-          ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
-        `}
+          md:flex
+        "
       >
         <button
           type="button"
