@@ -660,7 +660,7 @@ function App() {
           ref={Contact}
           id="contact"
           className="
-            mx-auto flex min-h-[90vh] w-full items-center justify-center
+            mx-auto flex min-h-[100vh] w-full items-center justify-center
             overflow-hidden px-[2vh] py-[8vh]
           "
           style={{
