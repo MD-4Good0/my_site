@@ -147,18 +147,17 @@ function ProjectCard({
   const isLeft = direction === "left";
 
   const imageHoverShift = isLeft
-    ? "md:group-hover:-translate-x-[26vh]"
-    : "md:group-hover:translate-x-[26vh]";
+    ? "md:group-hover:-translate-x-[24vh]"
+    : "md:group-hover:translate-x-[24vh]";
 
   const infoPosition = isLeft
-    ? "md:right-[4vh] md:translate-x-[4vh]"
-    : "md:left-[4vh] md:-translate-x-[4vh]";
+    ? "md:right-[8vh] md:translate-x-[4vh]"
+    : "md:left-[8vh] md:-translate-x-[4vh]";
 
   const imageBlock = (
     <div
       className={`
         z-20 flex w-full justify-center transition-all duration-500 ease-out
-        md:w-auto
         ${imageHoverShift}
       `}
     >
@@ -166,9 +165,11 @@ function ProjectCard({
         src={image}
         alt={imageAlt}
         className="
-          w-full max-w-[72vh] rounded-[1.5vh] border border-black/5
+          w-full max-w-[38vh] rounded-[1.5vh] border border-black/5
           object-cover shadow-[0_22px_50px_rgba(15,23,42,0.14)]
-          transition duration-300 group-hover:shadow-[0_26px_60px_rgba(15,23,42,0.20)]
+          transition duration-300
+          group-hover:shadow-[0_26px_60px_rgba(15,23,42,0.20)]
+          md:max-w-[72vh]
         "
       />
     </div>
@@ -177,16 +178,14 @@ function ProjectCard({
   const infoBlock = (
     <div
       className={`
-        z-30 flex w-full max-w-[42vh] flex-col items-center justify-center
+        z-30 flex w-full max-w-[38vh] flex-col items-center justify-center
         rounded-[2vh] border border-black/5 bg-white/90 p-[2.6vh]
         text-center shadow-[0_18px_45px_rgba(15,23,42,0.12)]
         backdrop-blur-sm transition-all duration-500 ease-out
-        md:p-[3vh]
-      
-        md:absolute md:opacity-0 md:pointer-events-none
+        md:absolute md:max-w-[42vh] md:p-[3vh]
+        md:opacity-0 md:pointer-events-none
         md:group-hover:opacity-100 md:group-hover:pointer-events-auto
         md:group-hover:translate-x-0
-      
         ${infoPosition}
       `}
     >
@@ -218,19 +217,25 @@ function ProjectCard({
       <div
         className="
           mt-[1.25vh] w-full text-center text-[1.75vh] leading-[1.4]
-          text-[#6b7280] md:text-[2vh]
+          text-[#6b7280] md:mt-[1.5vh] md:text-[2vh]
         "
       >
         {description}
       </div>
 
-      <div className="mt-[1.5vh] flex gap-[1.25vh] text-[1.8vh] font-bold text-[#101010] md:text-[2vh]">
+      <div
+        className="
+          mt-[1.5vh] flex flex-wrap items-center justify-center
+          gap-x-[1.25vh] gap-y-[0.5vh] text-[1.65vh]
+          font-bold text-[#101010] md:flex-nowrap md:text-[2vh]
+        "
+      >
         {stack.map((item) => (
           <div key={item}>{item}</div>
         ))}
       </div>
 
-      <div className="mt-[1.5vh] flex flex-row items-center justify-center gap-[1vh]">
+      <div className="mt-[1.5vh] flex flex-row flex-nowrap items-center justify-center gap-[1vh]">
         <ProjectButton
           href={codeHref}
           icon={github}
@@ -258,7 +263,7 @@ function ProjectCard({
     <div
       className="
         group relative flex w-full max-w-[136vh] flex-col items-center
-        justify-center gap-[3vh] md:min-h-[48vh]
+        justify-center gap-[3vh] md:min-h-[34vh] md:gap-0
       "
     >
       {imageBlock}
@@ -452,7 +457,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center md:block">
-                  <div className="my-[3vh] hidden gap-[3vh] md:ml-[1vh] md:flex">
+                  <div className="my-[2.5vh] flex gap-[3vh] md:my-[3vh] md:ml-[1vh]">
                     <SocialButton
                       href="https://www.facebook.com/3L.DNA/"
                       icon={facebook}
@@ -580,23 +585,23 @@ function App() {
             justify-center px-[4vh]
           "
         >
-          <div className="flex w-full flex-col items-center justify-center text-center md:items-start md:text-left">
+          <div className="flex w-full flex-col items-center justify-center text-center">
             <div className="text-[2.4vh] font-bold text-[#21a35e] md:text-[2.5vh]">
               🧩 Projects ~
             </div>
 
             <div
               className="
-                mt-[1.5vh] max-w-[34vh] text-center text-[2.7vh] font-bold
-                leading-tight text-[#2F3037]
-                md:max-w-none md:text-left md:text-[3.25vh]
+                mt-[1.5vh] max-w-[36vh] text-center text-[2.8vh]
+                font-bold leading-tight text-[#2F3037]
+                md:max-w-none md:text-[3.25vh]
               "
             >
               The pieces that create the full picture.
             </div>
           </div>
 
-          <div className="mt-[5vh] flex w-full flex-col items-center gap-[8vh] md:gap-[10vh]">
+          <div className="mt-[5vh] flex w-full flex-col items-center gap-[8vh] md:gap-[3vh]">
             <ProjectCard
               direction="left"
               image={nmis}
