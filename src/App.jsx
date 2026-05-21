@@ -343,7 +343,7 @@ function App() {
   const handleScrollToContact = () => handleScrollToSection("contact");
 
   return (
-    <div className="min-h-screen caret-transparent font-['Poppins','Lucida_Sans_Unicode','Lucida_Grande','Lucida_Sans',Arial,sans-serif] text-[#101010]">
+    <div className="min-h-screen overflow-x-hidden caret-transparent font-['Poppins','Lucida_Sans_Unicode','Lucida_Grande','Lucida_Sans',Arial,sans-serif] text-[#101010]">
       <aside
         className="
           fixed left-0 top-0 z-[1000] hidden h-screen w-[6rem]
@@ -405,7 +405,7 @@ function App() {
         <div />
       </aside>
 
-      <main className="min-h-screen md:pl-[6rem]">
+      <main className="min-h-screen overflow-x-hidden md:pl-[6rem]">
         <div ref={Me} id="Me" className="mt-[-2vh]" />
 
         <section
@@ -502,22 +502,14 @@ function App() {
           </div>
         </section>
 
-        <div
+        <section
           ref={About}
           id="About"
           className="
-            mb-[-3vh] flex items-center justify-center text-transparent
-            min-[322px]:max-[376px]:mb-0 min-[322px]:max-[376px]:mt-0
-            min-[377px]:max-[383px]:mb-[-6em]
+            flex min-h-screen w-full items-center justify-center overflow-hidden
+            px-[2vh] py-[10vh]
+            md:min-h-[110vh] md:px-0 md:py-0
           "
-        />
-
-      <section
-        className="
-          flex min-h-screen w-full items-center justify-center
-          px-[2vh] py-[10vh]
-          md:min-h-[110vh] md:px-0 md:py-0
-        "
           style={{
             background:
               "radial-gradient(circle at 18% 42%, rgba(255, 81, 0, 0.24) 0%, transparent 30%), radial-gradient(circle at 85% 20%, rgba(251, 146, 60, 0.20) 0%, transparent 32%), linear-gradient(135deg, #fff7ed 0%, #ffffff 48%, #fff3e6 100%)",
@@ -530,7 +522,7 @@ function App() {
               md:min-h-[105vh] md:w-[150vh] md:flex-row md:gap-[6vh] md:text-left
             "
           >
-            <div className="w-[140vh] rounded-[3vh] p-[2vh] ">
+            <div className="w-full max-w-[34vh] rounded-[3vh] p-[2vh] md:w-[140vh] md:max-w-none">
               <img
                 src={frontend}
                 alt="frontend"
@@ -568,15 +560,11 @@ function App() {
           </div>
         </section>
 
-        <div
+        <section
           ref={Projects}
           id="Projects"
-          className="h-0 scroll-mt-0"
-        />
-
-        <section
           className="
-            flex w-full items-center justify-center px-[2vh] py-[10vh]
+            flex w-full items-center justify-center overflow-hidden px-[2vh] py-[10vh]
             md:px-0 md:py-[8vh]
           "
           style={{
@@ -668,15 +656,12 @@ function App() {
         </div>
         </section>
 
-        <div
-            ref={Contact}
-            id="contact"
-          ></div>
-
         <section
+          ref={Contact}
+          id="contact"
           className="
-            mx-auto flex min-h-[100vh] w-full items-center justify-center
-            px-[2vh] py-[8vh]
+            mx-auto flex min-h-[90vh] w-full items-center justify-center
+            overflow-hidden px-[2vh] py-[8vh]
           "
           style={{
             background:
