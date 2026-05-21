@@ -522,11 +522,11 @@ function App() {
               md:min-h-[105vh] md:w-[150vh] md:flex-row md:gap-[6vh] md:text-left
             "
           >
-            <div className="w-full max-w-[34vh] rounded-[3vh] p-[2vh] md:w-[140vh] md:max-w-none">
+            <div className="hidden rounded-[3vh] p-[2vh] md:block md:w-[140vh]">
               <img
                 src={frontend}
                 alt="frontend"
-                className="w-[20vh] pr-0 md:w-[30vh]"
+                className="w-[30vh]"
               />
             </div>
 
