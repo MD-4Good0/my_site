@@ -186,6 +186,7 @@ function ProjectCard({
         md:opacity-0 md:pointer-events-none
         md:group-hover:opacity-100 md:group-hover:pointer-events-auto
         md:group-hover:translate-x-0
+        
         ${infoPosition}
       `}
     >
