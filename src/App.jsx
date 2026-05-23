@@ -182,7 +182,7 @@ function ProjectCard({
         rounded-[2vh] border border-black/5 bg-white/90 p-[2.6vh]
         text-center shadow-[0_18px_45px_rgba(15,23,42,0.12)]
         backdrop-blur-sm transition-all duration-500 ease-out
-        md:absolute md:max-w-[42vh] md:p-[3vh]
+        md:absolute md:top-1/2 md:max-w-[42vh] md:-translate-y-1/2 md:p-[3vh]
         md:opacity-0 md:pointer-events-none
         md:group-hover:opacity-100 md:group-hover:pointer-events-auto
         md:group-hover:translate-x-0
@@ -264,7 +264,7 @@ function ProjectCard({
     <div
       className="
         group relative flex w-full max-w-[136vh] flex-col items-center
-        justify-center gap-[3vh] md:min-h-[34vh] md:gap-0
+        justify-center gap-[3vh] md:min-h-[44vh] md:gap-0
       "
     >
       {imageBlock}
@@ -602,7 +602,7 @@ function App() {
             </div>
           </div>
 
-          <div className="mt-[5vh] flex w-full flex-col items-center gap-[8vh] md:gap-[3vh]">
+          <div className="mt-[5vh] flex w-full flex-col items-center gap-[8vh] md:gap-[5vh]">
             <ProjectCard
               direction="left"
               image={nmis}
