@@ -760,7 +760,7 @@ function App() {
                   hover:shadow-[0_14px_32px_rgba(15,163,208,0.30)]
                 "
               >
-                La Resumé
+                La Résumé
               </button>
             </a>
           </div>
