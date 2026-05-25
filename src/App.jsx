@@ -616,7 +616,8 @@ function App() {
               codeHref="https://github.com/MD-4Good0/LIMS-128.2"
               liveHref="https://nmis.vercel.app/login"
             />
-
+            
+            {/*
             <ProjectCard
               direction="right"
               image={calotrac}
@@ -629,9 +630,10 @@ function App() {
               stack={["ANGULAR", "CSS"]}
               codeHref="https://github.com/MD-4Good0/CalotraC"
             />
-
+            */}
+            
             <ProjectCard
-              direction="left"
+              direction="right"
               image={medlabview}
               imageAlt="medlabview"
               logo={medlabview_logo}
@@ -645,7 +647,7 @@ function App() {
             />
 
             <ProjectCard
-              direction="right"
+              direction="left"
               image={BIMS}
               imageAlt="UPM-BIMS dashboard preview"
               logo={BIMS_logo}
